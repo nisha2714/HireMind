@@ -1,0 +1,602 @@
+[
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "What is the difference between an abstract class and an interface in Java?"
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "Explain how HashMap works internally and what happens on a hash collision."
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "What is the difference between checked and unchecked exceptions? Give an example of each."
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What is the difference between JDBC and an ORM like Hibernate, and when would you use each?"
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "Explain the main OOP principles and show how you have applied them in a project."
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What is Spring Boot and what problems does it solve compared to plain Spring?"
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "Your Java program throws a NullPointerException in production. How do you find and fix the cause?"
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "You need to find duplicate elements in a list of one million integers. What approach would you take and why?"
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "Explain the difference between multithreading and multiprocessing to someone with no programming background."
+  },
+  {
+    "role": "Java Developer (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "Walk me through a project you built in Java: your role, the design, and one challenge you solved."
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "Explain the difference between var, let, and const in JavaScript."
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "How does the CSS box model work, and how do Flexbox and Grid differ?"
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "What are props and state in React, and how do they differ?"
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What is the virtual DOM and why does React use it?"
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "How do you make a web page responsive and accessible?"
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What happens in the browser between typing a URL and seeing the page?"
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "A React page re-renders too often and feels slow. How would you investigate and fix it?"
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "A button works in Chrome but not in Safari. How do you debug it?"
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "Explain what a REST API call from the frontend does to a non-technical teammate."
+  },
+  {
+    "role": "Frontend Developer (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "Describe a UI you built: the user problem, your design choices, and what you would improve."
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "Write or describe a SQL query to find the top 5 customers by total order value."
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "What is the difference between INNER JOIN, LEFT JOIN, and FULL OUTER JOIN?"
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "How would you use Pandas to clean a dataset with missing values and duplicates?"
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "Which metrics would you track to measure the health of an e-commerce business, and why?"
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What is the difference between correlation and causation? Give an example."
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "When would you choose a bar chart, line chart, or scatter plot?"
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "Monthly sales dropped 15% last month. How would you investigate the cause?"
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "A dashboard number does not match the finance team's report. How do you reconcile it?"
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "Explain what a p-value means to a manager with no statistics background."
+  },
+  {
+    "role": "Data Analyst (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "Walk me through an analysis project: the question, your method, and the insight you delivered."
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "What is the difference between functional, regression, and smoke testing?"
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "How would you write test cases for a login page? List positive and negative cases."
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "What is Selenium and how do you locate elements reliably?"
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "Explain the software testing life cycle and the bug life cycle."
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What is the difference between severity and priority? Give an example of high severity with low priority."
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What is the testing pyramid and why does it matter?"
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "A bug appears only intermittently. How do you reproduce and isolate it?"
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "You have one day before release and too many test cases. How do you decide what to test?"
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "How would you write a bug report so a developer can fix it quickly?"
+  },
+  {
+    "role": "QA Engineer (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "A developer says your reported bug is 'working as designed'. How do you handle it?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "What is the difference between a plain LLM call and an agent that uses tools?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "How do you write a prompt that returns reliable structured JSON output?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Easy",
+    "question": "What is RAG and what are its main components?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What are embeddings and how are they used in semantic search?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "What is tool calling / function calling, and what risks does it introduce?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Easy",
+    "question": "How do LLM context windows and token limits affect how you design an application?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "Your agent keeps calling the wrong tool. How would you debug and improve it?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Easy",
+    "question": "An LLM answer contains facts not in your documents (hallucination). How do you reduce this?"
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "Explain how an AI agent works to a non-technical stakeholder."
+  },
+  {
+    "role": "Agentic AI Developer (Fresher)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Easy",
+    "question": "Describe an AI project you built: the goal, the architecture, and one failure you fixed."
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "Walk me through how you would design and version a REST API for a high-traffic service."
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "How do you optimize a slow SQL query? What tools and indexes would you use?"
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "Explain caching strategies (cache-aside, write-through) and how you handle invalidation."
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "Compare microservices and a modular monolith. When would you choose each?"
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "How do you ensure data consistency across services (sagas, outbox, idempotency)?"
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "Explain your approach to authentication, authorization, and securing APIs."
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Problem Solving",
+    "difficulty": "Medium",
+    "question": "P99 latency of a critical endpoint doubled after a release. How do you diagnose it?"
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Problem Solving",
+    "difficulty": "Medium",
+    "question": "A queue consumer processes some messages twice. How do you make processing safe and correct?"
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Medium",
+    "question": "Describe a technical decision you made that others disagreed with. How did you get alignment?"
+  },
+  {
+    "role": "Senior Backend Engineer",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Medium",
+    "question": "How do you mentor junior engineers and review their code constructively?"
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "How do you structure state management and data fetching in a large React application?"
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "Describe how you would design the API contract between frontend and backend for a new feature."
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "How do you optimize frontend performance (bundle size, rendering, Core Web Vitals)?"
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "Compare server-side rendering, static generation, and client-side rendering."
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "How do you handle authentication across frontend and backend (sessions vs JWT, CSRF, XSS)?"
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "How would you design your database schema and migrations for a feature evolving over time?"
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Problem Solving",
+    "difficulty": "Medium",
+    "question": "Users report intermittent data loss on form submits. How do you trace it across the stack?"
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Problem Solving",
+    "difficulty": "Medium",
+    "question": "You must ship a feature in two weeks that normally takes six. How do you scope and decide trade-offs?"
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Medium",
+    "question": "Explain a complex architectural trade-off to a product manager."
+  },
+  {
+    "role": "Senior Full Stack Engineer",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Medium",
+    "question": "Describe how you collaborate with designers and backend teams when requirements are unclear."
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "How do you take a model from notebook to production? Describe the pipeline and tooling."
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "How do you handle imbalanced datasets and which metrics do you use to evaluate them?"
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "Compare fine-tuning, RAG, and prompt engineering for adapting an LLM. When do you choose each?"
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "How do you detect and handle data drift and model decay in production?"
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "How do you evaluate an LLM-based system where there is no single correct answer?"
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "What are the cost, latency, and privacy trade-offs of hosted vs self-hosted models?"
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Medium",
+    "question": "A model's accuracy dropped in production while offline metrics look fine. How do you investigate?"
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Medium",
+    "question": "Inference costs have tripled. How do you reduce them without hurting quality?"
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Medium",
+    "question": "Explain model limitations and uncertainty to business stakeholders who want guarantees."
+  },
+  {
+    "role": "AI/ML Engineer (Senior)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Medium",
+    "question": "Describe a time an ML project failed or was cancelled. What did you learn?"
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Technical Skills",
+    "difficulty": "Hard",
+    "question": "Design a system that handles 10,000 requests per second with high availability. Walk through the components."
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Technical Skills",
+    "difficulty": "Hard",
+    "question": "How do you choose between SQL, NoSQL, and event streaming for different parts of a system?"
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Technical Skills",
+    "difficulty": "Hard",
+    "question": "How do you design for observability: logging, metrics, tracing, and alerting?"
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Hard",
+    "question": "How do you manage technical debt against feature delivery across several teams?"
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Hard",
+    "question": "Describe how you would plan and execute a migration from a monolith to services with no downtime."
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Hard",
+    "question": "How do you define and enforce architectural standards without slowing teams down?"
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Problem Solving",
+    "difficulty": "Hard",
+    "question": "Two teams propose conflicting architectures for the same platform. How do you resolve it?"
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Problem Solving",
+    "difficulty": "Hard",
+    "question": "A major outage occurred due to a design flaw. How do you run the response and prevent recurrence?"
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Hard",
+    "question": "How do you present an architecture proposal to executives who care about cost and risk?"
+  },
+  {
+    "role": "Tech Lead / Architect",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Hard",
+    "question": "Describe how you grow engineers into technical leaders and handle underperformance."
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "Explain how you would design a CI/CD pipeline for a containerized microservice."
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "Describe how Kubernetes handles scheduling, scaling, and self-healing of workloads."
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Technical Skills",
+    "difficulty": "Medium",
+    "question": "How do you manage infrastructure as code (Terraform) safely across environments?"
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "Compare blue-green, canary, and rolling deployments. When do you use each?"
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "How do you manage secrets and enforce security in pipelines and clusters?"
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Domain Understanding",
+    "difficulty": "Medium",
+    "question": "Define SLIs, SLOs, and error budgets and explain how you use them."
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Medium",
+    "question": "A pod is in CrashLoopBackOff after a deploy. Walk me through your debugging steps."
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Problem Solving",
+    "difficulty": "Medium",
+    "question": "Cloud costs rose 40% in a month. How do you find the cause and cut them?"
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Medium",
+    "question": "Describe how you run a blameless post-incident review."
+  },
+  {
+    "role": "DevOps Engineer (Senior)",
+    "skill_area": "Communication Clarity",
+    "difficulty": "Medium",
+    "question": "How do you convince developers to adopt a new deployment process or tool?"
+  }
+]

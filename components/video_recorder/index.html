@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; color: #0f172a; }
+  .box { border: 1px solid #c7d2fe; border-radius: 12px; padding: 10px; background: #f8fafc; }
+  video { width: 100%; max-height: 300px; background: #0f172a; border-radius: 8px; }
+  .row { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; align-items: center; }
+  button { padding: 8px 14px; border-radius: 8px; border: 1px solid #c7d2fe; background: #fff; cursor: pointer; font-weight: 600; }
+  button.primary { background: #4f46e5; color: #fff; border: none; }
+  button.stop { background: #dc2626; color: #fff; border: none; }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  #status { font-size: 14px; margin-left: 4px; }
+  .err { color: #b91c1c; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="box">
+  <video id="preview" autoplay muted playsinline></video>
+  <div class="row">
+    <button id="enable" class="primary">Enable camera &amp; microphone</button>
+    <button id="start" disabled>&#9679; Start recording</button>
+    <button id="stop" class="stop" disabled>&#9632; Stop &amp; submit</button>
+    <span id="status">Camera is off.</span>
+  </div>
+</div>
+<script>
+  const send = (type, extra) => window.parent.postMessage(Object.assign({ isStreamlitMessage: true, type }, extra), "*");
+  const setValue = (v) => send("streamlit:setComponentValue", { value: v, dataType: "json" });
+  const setHeight = (h) => send("streamlit:setFrameHeight", { height: h });
+
+  const $ = (id) => document.getElementById(id);
+  let stream = null, recorder = null, chunks = [], samples = [], sampleTimer = null, tick = null, startedAt = 0, maxSeconds = 120;
+
+  function status(msg, isErr) { $("status").textContent = msg; $("status").className = isErr ? "err" : ""; }
+
+  function frameMetrics() {
+    const v = $("preview");
+    if (!v.videoWidth) return null;
+    const w = 160, h = 120, c = document.createElement("canvas");
+    c.width = w; c.height = h;
+    const ctx = c.getContext("2d", { willReadFrequently: true });
+    ctx.drawImage(v, 0, 0, w, h);
+    const d = ctx.getImageData(0, 0, w, h).data, g = new Float32Array(w * h);
+    let sum = 0;
+    for (let i = 0; i < w * h; i++) { g[i] = 0.299 * d[4 * i] + 0.587 * d[4 * i + 1] + 0.114 * d[4 * i + 2]; sum += g[i]; }
+    // variance of 4-neighbour Laplacian = sharpness
+    let lsum = 0, lsq = 0, n = 0;
+    for (let y = 1; y < h - 1; y++) for (let x = 1; x < w - 1; x++) {
+      const i = y * w + x, l = g[i - 1] + g[i + 1] + g[i - w] + g[i + w] - 4 * g[i];
+      lsum += l; lsq += l * l; n++;
+    }
+    const mean = lsum / n;
+    return { brightness: sum / (w * h), sharpness: lsq / n - mean * mean };
+  }
+
+  async function faceCount() {
+    if (!("FaceDetector" in window)) return null;
+    try { return (await new window.FaceDetector().detect($("preview"))).length; } catch (e) { return null; }
+  }
+
+  async function takeSample() {
+    const m = frameMetrics();
+    if (!m) return;
+    m.faces = await faceCount();
+    samples.push(m);
+  }
+
+  $("enable").onclick = async () => {
+    status("Requesting camera...");
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ video: { width: 640, height: 480 }, audio: true });
+    } catch (e) {
+      status("Camera or microphone is not available: " + e.name, true);
+      setValue({ status: "error", message: "Camera/microphone not enabled or not available (" + e.name + ")." });
+      return;
+    }
+    $("preview").srcObject = stream;
+    $("enable").disabled = true;
+    $("start").disabled = false;
+    status("Camera ready. Check that your face is lit and clear, then start recording.");
+  };
+
+  $("start").onclick = () => {
+    chunks = []; samples = [];
+    const types = ["video/webm;codecs=vp8,opus", "video/webm", "video/mp4"];
+    const mime = types.find((t) => window.MediaRecorder && MediaRecorder.isTypeSupported(t)) || "";
+    recorder = new MediaRecorder(stream, mime ? { mimeType: mime, videoBitsPerSecond: 600000, audioBitsPerSecond: 64000 } : {});
+    recorder.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
+    recorder.onstop = finish;
+    recorder.start(1000);
+    startedAt = Date.now();
+    sampleTimer = setInterval(takeSample, 1000);
+    tick = setInterval(() => {
+      const s = Math.round((Date.now() - startedAt) / 1000);
+      status("Recording... " + s + "s (max " + maxSeconds + "s)");
+      if (s >= maxSeconds) $("stop").click();
+    }, 500);
+    $("start").disabled = true; $("stop").disabled = false;
+  };
+
+  $("stop").onclick = () => { if (recorder && recorder.state !== "inactive") recorder.stop(); };
+
+  function finish() {
+    clearInterval(sampleTimer); clearInterval(tick);
+    $("stop").disabled = true;
+    status("Processing recording...");
+    const blob = new Blob(chunks, { type: recorder.mimeType || "video/webm" });
+    const seconds = (Date.now() - startedAt) / 1000;
+    const avg = (k) => samples.length ? samples.reduce((a, s) => a + s[k], 0) / samples.length : null;
+    const known = samples.filter((s) => s.faces !== null);
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setValue({
+        status: "recorded", data: reader.result.substring(reader.result.indexOf("base64,") + 7), mime: blob.type, seconds: seconds,
+        brightness: avg("brightness"), sharpness: avg("sharpness"), samples: samples.length,
+        faces_seen: known.length ? known.filter((s) => s.faces > 0).length : null, faces_checked: known.length,
+      });
+      status("Recorded " + seconds.toFixed(1) + "s. Submitting...");
+    };
+    reader.readAsDataURL(blob);
+  }
+
+  window.addEventListener("message", (e) => {
+    if (e.data && e.data.type === "streamlit:render") {
+      maxSeconds = (e.data.args && e.data.args.max_seconds) || 120;
+      setHeight(400);
+    }
+  });
+  send("streamlit:componentReady", { apiVersion: 1 });
+  setHeight(400);
+</script>
+</body>
+</html>

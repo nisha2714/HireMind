@@ -1,0 +1,101 @@
+role,skill_area,difficulty,question
+Java Developer (Fresher),Technical Skills,Easy,What is the difference between an abstract class and an interface in Java?
+Java Developer (Fresher),Technical Skills,Easy,Explain how HashMap works internally and what happens on a hash collision.
+Java Developer (Fresher),Technical Skills,Easy,What is the difference between checked and unchecked exceptions? Give an example of each.
+Java Developer (Fresher),Domain Understanding,Easy,"What is the difference between JDBC and an ORM like Hibernate, and when would you use each?"
+Java Developer (Fresher),Domain Understanding,Easy,Explain the main OOP principles and show how you have applied them in a project.
+Java Developer (Fresher),Domain Understanding,Easy,What is Spring Boot and what problems does it solve compared to plain Spring?
+Java Developer (Fresher),Problem Solving,Easy,Your Java program throws a NullPointerException in production. How do you find and fix the cause?
+Java Developer (Fresher),Problem Solving,Easy,You need to find duplicate elements in a list of one million integers. What approach would you take and why?
+Java Developer (Fresher),Communication Clarity,Easy,Explain the difference between multithreading and multiprocessing to someone with no programming background.
+Java Developer (Fresher),Communication Clarity,Easy,"Walk me through a project you built in Java: your role, the design, and one challenge you solved."
+Frontend Developer (Fresher),Technical Skills,Easy,"Explain the difference between var, let, and const in JavaScript."
+Frontend Developer (Fresher),Technical Skills,Easy,"How does the CSS box model work, and how do Flexbox and Grid differ?"
+Frontend Developer (Fresher),Technical Skills,Easy,"What are props and state in React, and how do they differ?"
+Frontend Developer (Fresher),Domain Understanding,Easy,What is the virtual DOM and why does React use it?
+Frontend Developer (Fresher),Domain Understanding,Easy,How do you make a web page responsive and accessible?
+Frontend Developer (Fresher),Domain Understanding,Easy,What happens in the browser between typing a URL and seeing the page?
+Frontend Developer (Fresher),Problem Solving,Easy,A React page re-renders too often and feels slow. How would you investigate and fix it?
+Frontend Developer (Fresher),Problem Solving,Easy,A button works in Chrome but not in Safari. How do you debug it?
+Frontend Developer (Fresher),Communication Clarity,Easy,Explain what a REST API call from the frontend does to a non-technical teammate.
+Frontend Developer (Fresher),Communication Clarity,Easy,"Describe a UI you built: the user problem, your design choices, and what you would improve."
+Data Analyst (Fresher),Technical Skills,Easy,Write or describe a SQL query to find the top 5 customers by total order value.
+Data Analyst (Fresher),Technical Skills,Easy,"What is the difference between INNER JOIN, LEFT JOIN, and FULL OUTER JOIN?"
+Data Analyst (Fresher),Technical Skills,Easy,How would you use Pandas to clean a dataset with missing values and duplicates?
+Data Analyst (Fresher),Domain Understanding,Easy,"Which metrics would you track to measure the health of an e-commerce business, and why?"
+Data Analyst (Fresher),Domain Understanding,Easy,What is the difference between correlation and causation? Give an example.
+Data Analyst (Fresher),Domain Understanding,Easy,"When would you choose a bar chart, line chart, or scatter plot?"
+Data Analyst (Fresher),Problem Solving,Easy,Monthly sales dropped 15% last month. How would you investigate the cause?
+Data Analyst (Fresher),Problem Solving,Easy,A dashboard number does not match the finance team's report. How do you reconcile it?
+Data Analyst (Fresher),Communication Clarity,Easy,Explain what a p-value means to a manager with no statistics background.
+Data Analyst (Fresher),Communication Clarity,Easy,"Walk me through an analysis project: the question, your method, and the insight you delivered."
+QA Engineer (Fresher),Technical Skills,Easy,"What is the difference between functional, regression, and smoke testing?"
+QA Engineer (Fresher),Technical Skills,Easy,How would you write test cases for a login page? List positive and negative cases.
+QA Engineer (Fresher),Technical Skills,Easy,What is Selenium and how do you locate elements reliably?
+QA Engineer (Fresher),Domain Understanding,Easy,Explain the software testing life cycle and the bug life cycle.
+QA Engineer (Fresher),Domain Understanding,Easy,What is the difference between severity and priority? Give an example of high severity with low priority.
+QA Engineer (Fresher),Domain Understanding,Easy,What is the testing pyramid and why does it matter?
+QA Engineer (Fresher),Problem Solving,Easy,A bug appears only intermittently. How do you reproduce and isolate it?
+QA Engineer (Fresher),Problem Solving,Easy,You have one day before release and too many test cases. How do you decide what to test?
+QA Engineer (Fresher),Communication Clarity,Easy,How would you write a bug report so a developer can fix it quickly?
+QA Engineer (Fresher),Communication Clarity,Easy,A developer says your reported bug is 'working as designed'. How do you handle it?
+Agentic AI Developer (Fresher),Technical Skills,Easy,What is the difference between a plain LLM call and an agent that uses tools?
+Agentic AI Developer (Fresher),Technical Skills,Easy,How do you write a prompt that returns reliable structured JSON output?
+Agentic AI Developer (Fresher),Technical Skills,Easy,What is RAG and what are its main components?
+Agentic AI Developer (Fresher),Domain Understanding,Easy,What are embeddings and how are they used in semantic search?
+Agentic AI Developer (Fresher),Domain Understanding,Easy,"What is tool calling / function calling, and what risks does it introduce?"
+Agentic AI Developer (Fresher),Domain Understanding,Easy,How do LLM context windows and token limits affect how you design an application?
+Agentic AI Developer (Fresher),Problem Solving,Easy,Your agent keeps calling the wrong tool. How would you debug and improve it?
+Agentic AI Developer (Fresher),Problem Solving,Easy,An LLM answer contains facts not in your documents (hallucination). How do you reduce this?
+Agentic AI Developer (Fresher),Communication Clarity,Easy,Explain how an AI agent works to a non-technical stakeholder.
+Agentic AI Developer (Fresher),Communication Clarity,Easy,"Describe an AI project you built: the goal, the architecture, and one failure you fixed."
+Senior Backend Engineer,Technical Skills,Medium,Walk me through how you would design and version a REST API for a high-traffic service.
+Senior Backend Engineer,Technical Skills,Medium,How do you optimize a slow SQL query? What tools and indexes would you use?
+Senior Backend Engineer,Technical Skills,Medium,"Explain caching strategies (cache-aside, write-through) and how you handle invalidation."
+Senior Backend Engineer,Domain Understanding,Medium,Compare microservices and a modular monolith. When would you choose each?
+Senior Backend Engineer,Domain Understanding,Medium,"How do you ensure data consistency across services (sagas, outbox, idempotency)?"
+Senior Backend Engineer,Domain Understanding,Medium,"Explain your approach to authentication, authorization, and securing APIs."
+Senior Backend Engineer,Problem Solving,Medium,P99 latency of a critical endpoint doubled after a release. How do you diagnose it?
+Senior Backend Engineer,Problem Solving,Medium,A queue consumer processes some messages twice. How do you make processing safe and correct?
+Senior Backend Engineer,Communication Clarity,Medium,Describe a technical decision you made that others disagreed with. How did you get alignment?
+Senior Backend Engineer,Communication Clarity,Medium,How do you mentor junior engineers and review their code constructively?
+Senior Full Stack Engineer,Technical Skills,Medium,How do you structure state management and data fetching in a large React application?
+Senior Full Stack Engineer,Technical Skills,Medium,Describe how you would design the API contract between frontend and backend for a new feature.
+Senior Full Stack Engineer,Technical Skills,Medium,"How do you optimize frontend performance (bundle size, rendering, Core Web Vitals)?"
+Senior Full Stack Engineer,Domain Understanding,Medium,"Compare server-side rendering, static generation, and client-side rendering."
+Senior Full Stack Engineer,Domain Understanding,Medium,"How do you handle authentication across frontend and backend (sessions vs JWT, CSRF, XSS)?"
+Senior Full Stack Engineer,Domain Understanding,Medium,How would you design your database schema and migrations for a feature evolving over time?
+Senior Full Stack Engineer,Problem Solving,Medium,Users report intermittent data loss on form submits. How do you trace it across the stack?
+Senior Full Stack Engineer,Problem Solving,Medium,You must ship a feature in two weeks that normally takes six. How do you scope and decide trade-offs?
+Senior Full Stack Engineer,Communication Clarity,Medium,Explain a complex architectural trade-off to a product manager.
+Senior Full Stack Engineer,Communication Clarity,Medium,Describe how you collaborate with designers and backend teams when requirements are unclear.
+AI/ML Engineer (Senior),Technical Skills,Medium,How do you take a model from notebook to production? Describe the pipeline and tooling.
+AI/ML Engineer (Senior),Technical Skills,Medium,How do you handle imbalanced datasets and which metrics do you use to evaluate them?
+AI/ML Engineer (Senior),Technical Skills,Medium,"Compare fine-tuning, RAG, and prompt engineering for adapting an LLM. When do you choose each?"
+AI/ML Engineer (Senior),Domain Understanding,Medium,How do you detect and handle data drift and model decay in production?
+AI/ML Engineer (Senior),Domain Understanding,Medium,How do you evaluate an LLM-based system where there is no single correct answer?
+AI/ML Engineer (Senior),Domain Understanding,Medium,"What are the cost, latency, and privacy trade-offs of hosted vs self-hosted models?"
+AI/ML Engineer (Senior),Problem Solving,Medium,A model's accuracy dropped in production while offline metrics look fine. How do you investigate?
+AI/ML Engineer (Senior),Problem Solving,Medium,Inference costs have tripled. How do you reduce them without hurting quality?
+AI/ML Engineer (Senior),Communication Clarity,Medium,Explain model limitations and uncertainty to business stakeholders who want guarantees.
+AI/ML Engineer (Senior),Communication Clarity,Medium,Describe a time an ML project failed or was cancelled. What did you learn?
+Tech Lead / Architect,Technical Skills,Hard,"Design a system that handles 10,000 requests per second with high availability. Walk through the components."
+Tech Lead / Architect,Technical Skills,Hard,"How do you choose between SQL, NoSQL, and event streaming for different parts of a system?"
+Tech Lead / Architect,Technical Skills,Hard,"How do you design for observability: logging, metrics, tracing, and alerting?"
+Tech Lead / Architect,Domain Understanding,Hard,How do you manage technical debt against feature delivery across several teams?
+Tech Lead / Architect,Domain Understanding,Hard,Describe how you would plan and execute a migration from a monolith to services with no downtime.
+Tech Lead / Architect,Domain Understanding,Hard,How do you define and enforce architectural standards without slowing teams down?
+Tech Lead / Architect,Problem Solving,Hard,Two teams propose conflicting architectures for the same platform. How do you resolve it?
+Tech Lead / Architect,Problem Solving,Hard,A major outage occurred due to a design flaw. How do you run the response and prevent recurrence?
+Tech Lead / Architect,Communication Clarity,Hard,How do you present an architecture proposal to executives who care about cost and risk?
+Tech Lead / Architect,Communication Clarity,Hard,Describe how you grow engineers into technical leaders and handle underperformance.
+DevOps Engineer (Senior),Technical Skills,Medium,Explain how you would design a CI/CD pipeline for a containerized microservice.
+DevOps Engineer (Senior),Technical Skills,Medium,"Describe how Kubernetes handles scheduling, scaling, and self-healing of workloads."
+DevOps Engineer (Senior),Technical Skills,Medium,How do you manage infrastructure as code (Terraform) safely across environments?
+DevOps Engineer (Senior),Domain Understanding,Medium,"Compare blue-green, canary, and rolling deployments. When do you use each?"
+DevOps Engineer (Senior),Domain Understanding,Medium,How do you manage secrets and enforce security in pipelines and clusters?
+DevOps Engineer (Senior),Domain Understanding,Medium,"Define SLIs, SLOs, and error budgets and explain how you use them."
+DevOps Engineer (Senior),Problem Solving,Medium,A pod is in CrashLoopBackOff after a deploy. Walk me through your debugging steps.
+DevOps Engineer (Senior),Problem Solving,Medium,Cloud costs rose 40% in a month. How do you find the cause and cut them?
+DevOps Engineer (Senior),Communication Clarity,Medium,Describe how you run a blameless post-incident review.
+DevOps Engineer (Senior),Communication Clarity,Medium,How do you convince developers to adopt a new deployment process or tool?
