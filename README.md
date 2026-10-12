@@ -88,7 +88,7 @@ question and follow-up generation) and `gpt-4o-mini-transcribe` (speech to text)
 
 ```bash
 pip install -r requirements.txt
-cp .env.example .env            # then set OPENAI_API_KEY
+echo OPENAI_API_KEY=your-key> .env   # create .env with your OpenAI key
 python setup.py                 # creates the database, 10 jobs, 100 questions, and the sample input files
 streamlit run app.py
 ```
